@@ -1,0 +1,33 @@
+﻿<Window x:Class="yourFirstNama_yourLastName.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:yourFirstNama_yourLastName"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Control Continu 1" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2" />
+        <Label Content="3 ISI" HorizontalAlignment="Left" Margin="384,38,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <StackPanel Margin="0,33,0,-33">
+            <Label Content="Name"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="180"/>
+            <Label Content="Age"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="180"/>
+            <Label Content="Email"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="180"/>
+            <Label Content="Height"/>
+            <Slider Width="120" Maximum="250" Minimum="100"/>
+            <Label Content="Weight"/>
+            <Slider Width="120" Maximum="150" Minimum="30"/>
+            <Button Content="Submit"/>
+
+        </StackPanel>
+        <ListBox Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="110,128,145,184"/>
+
+    </Grid>
+</Window>
